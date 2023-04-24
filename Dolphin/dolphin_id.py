@@ -47,23 +47,7 @@ if __name__ == "__main__":
      lo_by_dates_key = (list(lo_by_dates.keys()))
      lo_by_dates_values = (list(lo_by_dates.values()))
      print(lo_by_dates_values)
-     """
-     xtrain_ggkey = train_test_split(gg_by_dates_key,test_size=0.7)
-     ytrain_ggdata = train_test_split(gg_by_dates_values,test_size=0.7)
-     xtest_ggkey = train_test_split(gg_by_dates_key,test_size=0.3)
-     ytest_ggdata = train_test_split(gg_by_dates_values,test_size=0.3)
-     xtrain_lokey = train_test_split(lo_by_dates_key, test_size=0.7)
-     ytrain_lodata = train_test_split(lo_by_dates_values, test_size=0.7)
-     xtest_lokey = train_test_split(lo_by_dates_key, test_size=0.3)
-     ytest_lodata = train_test_split(lo_by_dates_values, test_size=0.3)
-     array_gg_train = np.hstack(xtrain_ggkey)
-     array_lo_train = np.hstack(xtrain_lokey)
-     array_gg_lo = np.concatenate(array_gg_train,array_lo_train)
-
-
-    
-    Create a specification list consisting of features which will be fed as each layer
-    """
+     
 specification_list =[(Dense, [20], {'activation':'relu', 'input_dim': 8}),
                      (Dense, [20], {'activation':'relu', 'input_dim':20}),
         (Dense, [20], {'activation': 'relu', 'input_dim': 20}),

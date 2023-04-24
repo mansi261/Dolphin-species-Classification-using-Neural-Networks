@@ -1,19 +1,18 @@
-# Might make your life easier for appending to lists
+
 import os
 from collections import defaultdict
 
-# Third party libraries
+
 import numpy as np
-# Only needed if you plot your confusion matrix
+
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from lib.buildmodels import build_model as bm, build_model
-# our libraries
+
 from lib.partition import split_by_day
 import lib.file_utilities as util
 from tensorflow.keras.layers import Dense, Input
 
-# Any other modules you create
 
 
 def dolphin_classifier(data_directory):

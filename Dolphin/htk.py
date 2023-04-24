@@ -1,7 +1,3 @@
-# hidden Markov model toolkit (HTK3)
-# file format reader.
-# Code by: Danijel Koržinek
-# from repository:  git@github.com:danijel3/PyHTK.git
 
 import subprocess
 import struct

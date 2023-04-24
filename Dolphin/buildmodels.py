@@ -1,8 +1,4 @@
-'''
-Created on Dec 2, 2017
 
-@author: mroch
-'''
 
 from tensorflow.keras.models import Sequential
 import tensorflow.keras.backend as K
